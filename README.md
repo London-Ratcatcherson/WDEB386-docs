@@ -5,8 +5,8 @@ Although Windows 3.0 was a 16 bit OS, its kernel actually ran in full 32 bit
 mode. The user mode executables were all limited to 16, 12 and 8 bit apps 
 (or, Win 3.0, Win 2.0 and MSDOS). For the user mode apps, you could use
 a standalone debugger like CodeView. But for the full kernel mode, you needed
-something heavier duty. WDEB386, short for Windows DEbugger running in 80386 
-protected mode (or the full 32 bit flat memory model). 
+something heavier duty. Hence, WDEB386, short for Windows DEbugger running in 
+80386 protected mode (or the full 32 bit flat memory model). 
 
 When I started at Microsoft as a Developer for Windows 3.1, the kernel debugger was 
 a fairly minimal framework with not a lot of documentation. Basically, you'd 
@@ -44,7 +44,7 @@ COM192.ASM
 Debugging Windows 3.x and 9.x used serial port IO between the device being debugged
 and the other device hosting the debugging session. Serial ports were simple 
 devices, but many OEMs got them wrong. The Windows team had a huge number of 
-PC's from D*** (a Texas PC OEM) which would often disable their serial ports.
+PC's from Dell (a Texas PC OEM) which would often disable their serial ports.
 
 One of my jobs on the Windows 95 team was troubleshooting debugging problems.
 I wrote an assembly language program to automate the major deployment blockers.
@@ -52,9 +52,9 @@ COM192 is an x86 (ie, 8 bit MSDOS) app that can:
  - enumerate the serial ports
  - and the parallel ports (because why not? I had to test those as well)
  - set the port to a specified baud rate (automating test lab configurations)
- - "Kick start" the D*** serial ports 
+ - "Kick start" the Dell serial ports 
  
- USB ports are not the defacto debugging IO standard, but please enjoy
+ USB ports are now the defacto debugging IO standard, but please enjoy
  good old COM192!
  
  
