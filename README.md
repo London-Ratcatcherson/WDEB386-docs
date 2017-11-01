@@ -39,7 +39,25 @@ And here we are - "Your pal, WDEB386"!
 
 ( Named for the old "Your pal, Jimmy Olsen" comics ).
 
+=============================================================================
+COM192.ASM
+Debugging Windows 3.x and 9.x used serial port IO between the device being debugged
+and the other device hosting the debugging session. Serial ports were simple 
+devices, but many OEMs got them wrong. The Windows team had a huge number of 
+PC's from D*** (a Texas PC OEM) which would often disable their serial ports.
 
+One of my jobs on the Windows 95 team was troubleshooting debugging problems.
+I wrote an assembly language program to automate the major deployment blockers.
+COM192 is an x86 (ie, 8 bit MSDOS) app that can:
+ - enumerate the serial ports
+ - and the parallel ports (because why not? I had to test those as well)
+ - set the port to a specified baud rate (automating test lab configurations)
+ - "Kick start" the D*** serial ports 
+ 
+ USB ports are not the defacto debugging IO standard, but please enjoy
+ good old COM192!
+ 
+ 
 
 
 
