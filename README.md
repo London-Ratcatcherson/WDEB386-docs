@@ -2,8 +2,8 @@
 This is my first full fat documentation for the Windows 95 kernel debugger.
 
 Although Windows 3.0 was a 16 bit OS, its kernel actually ran in full 32 bit
-mode. The user mode executables were all limited to 16, 12 and 8 bit apps 
-(or, Win 3.0, Win 2.0 and MSDOS). For the user mode apps, you could use
+mode, though user mode applications were limited to 8 and 16 bits
+(the .com and .exe intel memory models). For these user mode apps, you could use
 a standalone debugger like CodeView. But for the full kernel mode, you needed
 something heavier duty. Hence, WDEB386, short for Windows DEbugger running in 
 80386 protected mode (or the full 32 bit flat memory model). 
